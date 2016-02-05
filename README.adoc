@@ -1,0 +1,28 @@
+= Spring Boot Kotlin experiments
+
+This repo contains a Spring Boot application written in Kotlin
+exercising rudimentary Spring MVC and Spring Data REST.
+
+The key interesting parts are:
+- the main Application.kt file
+- the Customer.kt domain object
+- the CustomerRepository.kt CrudRepository
+
+The same testcase is shown in Kotlin and in Java.
+
+Fire it up with:
+mvn spring-boot:run
+
+and then
+
+curl localhost:8080/greeting?name=foo
+
+or 
+
+curl localhost:8080/customers
+
+This was also used to test out the eclipse support for Kotlin which does
+behave for working on this application.
+
+Disclaimer: I'm experimenting with Kotlin, I'm sure this isn't perfect
+Kotlin code!
